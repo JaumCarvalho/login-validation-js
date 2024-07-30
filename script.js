@@ -14,3 +14,9 @@ const myPassword = "12345";
 // styling error message and welcome screen to not appears in main content
 errorMessage.style.display = "none";
 welcomeScreen.style.display = "none";
+
+// clear inputs when invalid credentials is true and when go back to login button is clicked
+function clearInputs(){
+  usernameInput.value = "";
+  passwordInput.value = "";
+}
