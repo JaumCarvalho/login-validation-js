@@ -6,3 +6,7 @@ const passwordInput = document.getElementById('your-password');
 const loginContainer = document.querySelector('.container');
 const welcomeScreen = document.querySelector('.welcome-screen');
 const errorMessage = document.getElementById('error-message');
+
+// define email and password values
+const myEmail = "email@email.com";
+const myPassword = "12345";
