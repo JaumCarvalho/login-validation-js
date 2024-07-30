@@ -1,0 +1,78 @@
+/*Declaring global pseudo-variables*/
+:root{
+  --background: #F7F7F2;
+  --color: #261C15;
+  --blue: #2224ad;
+  --button: #09b83d;
+}
+
+/* body styling */
+body{
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+}
+
+/* form styling */
+form{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main h1 styling */
+main h1{
+  color: var(--color);
+  text-transform: uppercase;
+  font-size: 16px;
+  
+}
+
+/* input styling */
+input[type="email"], input[type="password"]{
+  background: transparent;
+  border: 1px solid;
+  margin: 5px 0;
+  padding: 4px;
+  font-family: sans-serif;
+  width: 30%;
+  color: var(--blue);
+}
+
+::-webkit-input-placeholder{
+  color: rgba(0,0,0,.4);
+  font-weight: 900;
+}
+
+/* this section appears on screen if you get right email and password */
+.welcome-screen{
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 100px;
+}
+
+/* welcome h2 screen styling */
+.welcome-screen h2{
+  color: var(--color);
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/* button styling*/
+button{
+  margin-top: 10px;
+  background: var(--button);
+  padding: 5px 25px;
+  color: var(--background);
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: none;
+}
