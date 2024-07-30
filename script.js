@@ -20,3 +20,14 @@ function clearInputs(){
   usernameInput.value = "";
   passwordInput.value = "";
 }
+
+// validate email and password to show error message or welcome screen
+loginButton.addEventListener('click', function () {
+  if (usernameInput.value === myEmail && passwordInput.value === myPassword) {
+    loginContainer.style.display = "none";
+    welcomeScreen.style.display = "flex";
+  } else{
+    errorMessage.style.display = "block";
+    clearInputs();
+  }
+});
