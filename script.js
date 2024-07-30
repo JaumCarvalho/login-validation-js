@@ -31,3 +31,11 @@ loginButton.addEventListener('click', function () {
     clearInputs();
   }
 });
+
+// go back button to login form
+backButton.addEventListener('click', function () {
+  loginContainer.style.display = "flex";
+  welcomeScreen.style.display = "none";
+  clearInputs();
+  errorMessage.style.display = "none";
+});
